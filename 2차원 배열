@@ -1,1 +1,64 @@
+#2738 행렬 덧셈
+N, M = map(int, input().split())
+A = list()
+B = list()
+for i in range(N):
+    A.append(list(map(int, input().split())))
+for i in range(N):
+    B.append(list(map(int, input().split())))
+for i in range(N):
+    for j in range(M):
+        A[i][j] += B[i][j]
+for i in range(N):
+    for j in range(M):
+        print(A[i][j],end=' ')
+    print()
 
+#2566 최댓값
+matrix = list()
+maxarr = list()
+M = 0
+idx = 0
+for _ in range(9):
+    matrix.append(list(map(int, input().split())))
+for i in range(9):
+    maxarr.append(max(matrix[i]))
+M = max(maxarr)
+print(M)
+idx = maxarr.index(M)
+print(idx + 1, matrix[idx].index(M) + 1)
+
+#10798 세로읽기
+arr = list()
+for i in range(5):
+    arr.append(list(map(str,input())))
+M = max(len(arr[0]),len(arr[1]),len(arr[2]),len(arr[3]),len(arr[4]))
+while len(arr[0]) < M:
+    arr[0].append("!")
+while len(arr[1]) < M:
+    arr[1].append("!")
+while len(arr[2]) < M:
+    arr[2].append("!")
+while len(arr[3]) < M:
+    arr[3].append("!")
+while len(arr[4]) < M:
+    arr[4].append("!")
+for i in range(M):
+    for j in range(5):
+        if arr[j][i] != "!":
+            print(arr[j][i],end="")
+        else:
+            pass
+
+#2563 색종이
+N = int(input())
+sqr = 0
+paper = [[0 for _ in range(100)] for _ in range(100)]
+for i in range(N):
+    x, y = map(int, input().split())
+    for j in range(x, x+10):
+        for k in range(y, y+10):
+            paper[j][k] = 1
+for i in range(100):
+    sqr += paper[i].count(1)
+print(sqr)
