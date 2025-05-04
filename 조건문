@@ -50,7 +50,6 @@ if H < 0:
 print(H, M)
 
 #2525 오븐 시계
-#2525 오븐 시계
 A, B = map(int,input().split())
 C = int(input())
 H = B + C
