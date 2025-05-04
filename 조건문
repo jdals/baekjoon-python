@@ -50,16 +50,14 @@ if H < 0:
 print(H, M)
 
 #2525 오븐 시계
+#2525 오븐 시계
 A, B = map(int,input().split())
 C = int(input())
 H = B + C
-while H > 60:
+while H >= 60:
     H = H - 60
     A = A + 1
-if H == 60:
-    H = 0
-    A = A + 1
-if A >= 24:
+while A >= 24:
     A = A - 24
 print(A,H)
 
@@ -73,4 +71,3 @@ elif a == c:
     print(1000 + (a * 100))
 else:
     print(max(a,b,c) * 100)
-
