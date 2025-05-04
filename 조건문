@@ -1,0 +1,22 @@
+#1330 두 수 비교하기
+A, B = map(int, input().split())
+if A > B:
+    print('>')
+elif A < B:
+    print('<')
+else:
+    print('==')
+
+#9498 시험 성적
+S = int(input())
+if S >= 90 and S <= 100:
+    print('A')
+elif S >= 80 and S <= 89:
+    print('B')
+elif S >= 70 and S <= 79:
+    print('C')
+elif S >= 60 and S <= 69:
+    print('D')
+else:
+    print('F')
+
