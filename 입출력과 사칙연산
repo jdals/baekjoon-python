@@ -13,3 +13,55 @@ print(a-b)
 a, b = map(int, input().split())
 print(a*b)
 
+#1008 A/B
+A, B = map(int,input().split())
+print(A/B)
+
+#10869 사칙연산
+A, B = map(int, input().split())
+print(A+B)
+print(A-B)
+print(A*B)
+print(A//B)
+print(A%B)
+
+#10926 ??!
+T = input()
+T = T + "??!"
+print(T)
+
+#18108 1998년생인 내가 태국에서는 2541년생?!
+y = int(input())
+print(y - 543)
+
+#10430 나머지
+A, B, C = map(int, input().split())
+print((A+B)%C)
+print(((A%C)+(B%C))%C)
+print((A*B)%C)
+print(((A%C)*(B%C))%C)
+
+#2588 곱셉
+a = int(input())
+b = int(input())
+print(a * (b % 10))
+print(a * (((b % 100) - (b % 10))//10))
+print(a * (b // 100))
+print(a * b)
+
+#11382 꼬마 정민
+A, B, C = map(int, input().split())
+print(A+B+C)
+
+#10171 고양이
+print("\\    /\\")
+print(" )  ( ')")
+print("(  /  )")
+print(" \\(__)|")
+
+#10172 개
+print("|\\_/|")
+print("|q p|   /}")
+print('( 0 )"""\\')
+print('|"^"`    |')
+print("||_/=\\\\__|")
