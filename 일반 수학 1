@@ -1,1 +1,39 @@
+#2745 진법 변환
+N, B = input().split()
+ary = "0123456789ABCDEFGHIJKLMNOPQRSTUVWXYZ"
+N = N[::-1]
+result = 0
+for i,n in enumerate(N):
+    result += (int(B)**i)*(ary.index(n))
+print(result)
 
+#11005 진법 변환 2
+N, B = map(int, input().split())
+s = ''
+arr = "0123456789ABCDEFGHIJKLMNOPQRSTUVWXYZ"
+while N:
+    s += str(arr[N%B])
+    N //= B
+print(s[::-1])
+
+#2720 세탁소 사장 동혁
+T = int(input())
+for i in range(T):
+    C = int(input())
+    Q = C // 25
+    C -= Q * 25
+    D = C // 10
+    C -= D * 10
+    N = C // 5
+    P = C - N * 5
+    print(Q, D, N, P)
+
+#2903 중앙 이동 알고리즘
+#2292 벌집
+#1193 분수찾기
+#2869 달팽이는 올라가고 싶다
+A, B, V = map(int, input().split())
+if (V-B)%(A-B)==0:
+  print(int((V-B)/(A-B)))
+else:
+  print(int((V-B)/(A-B))+1)
