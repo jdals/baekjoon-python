@@ -17,6 +17,10 @@ while n > 0:
     n = n - 1
 print(sum)
 
+or
+
+print(sum(range(1, int(input())+1)))
+
 #25304 영수증
 X = int(input())
 N = int(input())
