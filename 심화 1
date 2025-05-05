@@ -83,6 +83,15 @@ while cnt < len(s):
     cnt += 1
 print(cnt2)
 
+or
+
+croatia = ['c=', 'c-', 'dz=', 'd-', 'lj', 'nj', 's=', 'z=']
+word = input()
+
+for i in croatia :
+    word = word.replace(i, '*')  # input 변수와 동일한 이름의 변수
+print(len(word))
+
 #1316 그룹 단어 체커
 N = int(input())
 check = 0
