@@ -13,3 +13,17 @@ while A != 0 and B != 0:
             print("neither")
     A, B = map(int, input().split())
 
+#2501 약수 구하기
+N, K = map(int, input().split())
+n = 1
+cnt = 0
+check = 0
+while N >= n:
+    if N % n == 0:
+        cnt += 1
+        if cnt == K:
+            print(n)
+            check = 1
+    n += 1
+if check == 0:
+    print(check)
