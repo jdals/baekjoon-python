@@ -50,3 +50,22 @@ while n != -1:
     else:
         print(n, "is NOT perfect.")
     n = int(input())
+
+#1978 소수 찾기
+N = int(input())
+numarr = map(int, input().split())
+cnt = 0
+
+for i in numarr:
+    n = 2
+    while i >= n:
+        if i % n == 0:
+            break
+        else:
+            n += 1
+    if n == i:
+        cnt += 1
+print(cnt)
+
+#2581 소수
+#11653 소인수분해
