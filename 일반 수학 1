@@ -42,6 +42,24 @@ while N > n:
 print(cnt)
 
 #1193 분수찾기
+X = int(input())
+
+n = 1
+num = 0
+denum = 0
+
+while X > n:
+    X -= n
+    n += 1
+if n % 2 == 0:
+    denum = n - X + 1
+    num = X
+elif n % 2 != 0:
+    denum = X
+    num = n - X + 1
+    
+print(num,"/",denum, sep="")
+
 #2869 달팽이는 올라가고 싶다
 A, B, V = map(int, input().split())
 if (V-B)%(A-B)==0:
